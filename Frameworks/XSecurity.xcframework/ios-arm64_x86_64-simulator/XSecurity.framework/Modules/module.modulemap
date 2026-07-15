@@ -1,0 +1,11 @@
+framework module XSecurity {
+  umbrella header "XSecurity.h"
+  export *
+
+  module * { export * }
+}
+
+module XSecurity.Swift {
+  header "XSecurity-Swift.h"
+  requires objc
+}
