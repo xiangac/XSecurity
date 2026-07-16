@@ -281,8 +281,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
-@import ObjectiveC;
 #endif
 
 #endif
@@ -304,34 +302,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-@class NSString;
-SWIFT_CLASS("_TtC9XSecurity13XSecurityUtil")
-@interface XSecurityUtil : NSObject
-/// 加密
-/// \param plainText 需要加密的请求参数（如 JSON 字符串）
-///
-/// \param dynamicSalt 动态盐
-///
-///
-/// returns:
-/// 返回 Base64 编码的密文、Nonce、Tag 的组合，若失败返回 空字符串
-+ (NSDictionary<NSString *, NSString *> * _Nonnull)encryptPlainText:(NSString * _Nonnull)plainText dynamicSalt:(NSString * _Nonnull)dynamicSalt SWIFT_WARN_UNUSED_RESULT;
-/// 解密
-/// \param ciphertext 密文 (Base64)
-///
-/// \param nonceStr 初始化向量 (Base64)
-///
-/// \param tagStr 认证标签 (Base64)
-///
-/// \param dynamicSalt 动态盐
-///
-///
-/// returns:
-/// 解密后的明文字符串
-+ (NSString * _Nullable)decryptWithCiphertext:(NSString * _Nonnull)ciphertext nonceStr:(NSString * _Nonnull)nonceStr tagStr:(NSString * _Nonnull)tagStr dynamicSalt:(NSString * _Nonnull)dynamicSalt SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -624,8 +594,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
-@import ObjectiveC;
 #endif
 
 #endif
@@ -647,34 +615,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-@class NSString;
-SWIFT_CLASS("_TtC9XSecurity13XSecurityUtil")
-@interface XSecurityUtil : NSObject
-/// 加密
-/// \param plainText 需要加密的请求参数（如 JSON 字符串）
-///
-/// \param dynamicSalt 动态盐
-///
-///
-/// returns:
-/// 返回 Base64 编码的密文、Nonce、Tag 的组合，若失败返回 空字符串
-+ (NSDictionary<NSString *, NSString *> * _Nonnull)encryptPlainText:(NSString * _Nonnull)plainText dynamicSalt:(NSString * _Nonnull)dynamicSalt SWIFT_WARN_UNUSED_RESULT;
-/// 解密
-/// \param ciphertext 密文 (Base64)
-///
-/// \param nonceStr 初始化向量 (Base64)
-///
-/// \param tagStr 认证标签 (Base64)
-///
-/// \param dynamicSalt 动态盐
-///
-///
-/// returns:
-/// 解密后的明文字符串
-+ (NSString * _Nullable)decryptWithCiphertext:(NSString * _Nonnull)ciphertext nonceStr:(NSString * _Nonnull)nonceStr tagStr:(NSString * _Nonnull)tagStr dynamicSalt:(NSString * _Nonnull)dynamicSalt SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 #endif
 #if __has_attribute(external_source_symbol)

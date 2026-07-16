@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/XSecurity-Swift.h</key>
 		<data>
-		7a0EtlIOet5AKSYTP7sTXk/3mAw=
+		FBVNvAxdx7MQHjXSy5GL6hnymhM=
 		</data>
 		<key>Headers/XSecurity.h</key>
 		<data>
@@ -18,27 +18,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DuzxVItWeMCI7UC5TBEjHhPcb7E=
+		TB8s6kCCPBTke+T/raHmxgVaDRg=
 		</data>
 		<key>Modules/XSecurity.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Q8OPFSe45Xbq+TUpTR+yxAXFQs4=
+		VXyRGoqCXSwqlqcuDTBS/+IemCw=
 		</data>
 		<key>Modules/XSecurity.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		292YYyYh16TsIwl/4mjeuAyh3gw=
+		1Cv6FgLv+My4USxYOKEXQfvBGYA=
 		</data>
 		<key>Modules/XSecurity.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		2v5b01JYO0ZB6TvTxxhWLIj1Jg0=
+		Y0UYTYMNKs5f086EUfN2QI8/Lv8=
 		</data>
 		<key>Modules/XSecurity.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		292YYyYh16TsIwl/4mjeuAyh3gw=
+		1Cv6FgLv+My4USxYOKEXQfvBGYA=
 		</data>
 		<key>Modules/XSecurity.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GxyUWoXxzXUE8qTV1uoOgh+OuTw=
+		9S3okvGn/CgCPYAiytr7JSf34tM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lxsnpqu/Kx2CUMzvK4PkBWaPkSOFuCJ4hTx0HHakFqE=
+			aTRrWn25ulMuyFoxjLOWJEunzRgmjLGXtcVIPYBFIHA=
 			</data>
 		</dict>
 		<key>Headers/XSecurity.h</key>
@@ -72,35 +72,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b1lhzAycTE5Kgs898+WCk4w3ONbbTyqKQBAk84dETfE=
+			VfVJJ4z4LuWj+x3MK9N06zhaQx5iiCXMKBuh+CDp2uw=
 			</data>
 		</dict>
 		<key>Modules/XSecurity.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fjkRF5yTK90uiYVAU1+9DogVhbSIoOiA3qTUCamDjkA=
+			afzF835pnTScqUafEFAhUg42iw+6StYfazQT53QyL5c=
 			</data>
 		</dict>
 		<key>Modules/XSecurity.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GOYI1nTVt9IU3GXfnhmtYr5VkD1WwjZcC6WH/qdNdno=
+			Bn8Nhdhx2uVF89TuBCc5Mo5UUsIgvKiiR9EXnh8fPfE=
 			</data>
 		</dict>
 		<key>Modules/XSecurity.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fjkRF5yTK90uiYVAU1+9DogVhbSIoOiA3qTUCamDjkA=
+			afzF835pnTScqUafEFAhUg42iw+6StYfazQT53QyL5c=
 			</data>
 		</dict>
 		<key>Modules/XSecurity.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kV2aQMWD7phpxgdnNuiIPEuHI2o4wR0Ukab1IRare4s=
+			bVWBsyXz/ypNRppizlMcRAGiYyn/Betp3OkFKbV9DBU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

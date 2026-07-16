@@ -29,8 +29,19 @@ public class XSecurityTool: NSObject {
     ///   - nonceStr: 初始化向量 (Base64)
     ///   - tagStr: 认证标签 (Base64)
     ///   - dynamicSalt: 动态盐
-    /// - Returns: 解密后的明文字符串
-    @objc public static func decrypt(ciphertext: String, nonceStr: String, tagStr: String, dynamicSalt: String) -> String? {
+    /// - Returns: 解密后的明文data
+    @objc public static func decrypt(ciphertext: String, nonceStr: String, tagStr: String, dynamicSalt: String) -> Data? {
         return XSecurityUtil.decrypt(ciphertext: ciphertext, nonceStr: nonceStr, tagStr: tagStr, dynamicSalt: dynamicSalt)
+    }
+    
+    /// 解密
+    /// - Parameters:
+    ///   - ciphertext: 密文 (Base64)
+    ///   - nonceStr: 初始化向量 (Base64)
+    ///   - tagStr: 认证标签 (Base64)
+    ///   - dynamicSalt: 动态盐
+    /// - Returns: 解密后的明文字符串
+    @objc public static func decryptString(ciphertext: String, nonceStr: String, tagStr: String, dynamicSalt: String) -> String? {
+        return XSecurityUtil.decryptString(ciphertext: ciphertext, nonceStr: nonceStr, tagStr: tagStr, dynamicSalt: dynamicSalt)
     }
 }

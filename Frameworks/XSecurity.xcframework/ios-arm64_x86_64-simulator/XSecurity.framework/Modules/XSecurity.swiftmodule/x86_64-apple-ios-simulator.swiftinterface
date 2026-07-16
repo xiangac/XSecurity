@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target x86_64-apple-ios26.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name XSecurity
+// swift-module-flags: -target x86_64-apple-ios18.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name XSecurity
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import CryptoKit
 import Foundation
@@ -9,12 +9,13 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @objc public class XSecurityUtil : ObjectiveC.NSObject {
-  @objc public static func encryptPlainText(_ plainText: Swift.String, dynamicSalt: Swift.String) -> [Swift.String : Swift.String]
+public struct XSecurityUtil {
+  public static func encryptPlainText(_ plainText: Swift.String, dynamicSalt: Swift.String) -> [Swift.String : Swift.String]
   public static func encrypt(plainText: Swift.String, dynamicSalt: Swift.String) -> (ciphertext: Swift.String, nonce: Swift.String, tag: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func decrypt(ciphertext: Swift.String, nonceStr: Swift.String, tagStr: Swift.String, dynamicSalt: Swift.String) -> Swift.String?
+  public static func decrypt(ciphertext: Swift.String, nonceStr: Swift.String, tagStr: Swift.String, dynamicSalt: Swift.String) -> Foundation.Data?
   #endif
-  @objc override dynamic public init()
-  @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func decryptString(ciphertext: Swift.String, nonceStr: Swift.String, tagStr: Swift.String, dynamicSalt: Swift.String) -> Swift.String?
+  #endif
 }

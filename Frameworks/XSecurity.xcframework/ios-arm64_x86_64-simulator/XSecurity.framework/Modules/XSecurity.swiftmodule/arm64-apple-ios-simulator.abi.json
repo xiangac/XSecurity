@@ -75,14 +75,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@XSecurity@objc(cs)XSecurityUtil(cm)encryptPlainText:dynamicSalt:",
-            "mangledName": "$s9XSecurity0A4UtilC16encryptPlainText_11dynamicSaltSDyS2SGSS_SStFZ",
+            "usr": "s:9XSecurity0A4UtilV16encryptPlainText_11dynamicSaltSDyS2SGSS_SStFZ",
+            "mangledName": "$s9XSecurity0A4UtilV16encryptPlainText_11dynamicSaltSDyS2SGSS_SStFZ",
             "moduleName": "XSecurity",
             "static": true,
             "declAttributes": [
-              "Final",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -131,12 +129,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9XSecurity0A4UtilC7encrypt9plainText11dynamicSaltSS10ciphertext_SS5nonceSS3tagtSS_SStFZ",
-            "mangledName": "$s9XSecurity0A4UtilC7encrypt9plainText11dynamicSaltSS10ciphertext_SS5nonceSS3tagtSS_SStFZ",
+            "usr": "s:9XSecurity0A4UtilV7encrypt9plainText11dynamicSaltSS10ciphertext_SS5nonceSS3tagtSS_SStFZ",
+            "mangledName": "$s9XSecurity0A4UtilV7encrypt9plainText11dynamicSaltSS10ciphertext_SS5nonceSS3tagtSS_SStFZ",
             "moduleName": "XSecurity",
             "static": true,
             "declAttributes": [
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -146,6 +143,61 @@
             "kind": "Function",
             "name": "decrypt",
             "printedName": "decrypt(ciphertext:nonceStr:tagStr:dynamicSalt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9XSecurity0A4UtilV7decrypt10ciphertext8nonceStr03tagF011dynamicSalt10Foundation4DataVSgSS_S3StFZ",
+            "mangledName": "$s9XSecurity0A4UtilV7decrypt10ciphertext8nonceStr03tagF011dynamicSalt10Foundation4DataVSgSS_S3StFZ",
+            "moduleName": "XSecurity",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decryptString",
+            "printedName": "decryptString(ciphertext:nonceStr:tagStr:dynamicSalt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -187,58 +239,23 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@XSecurity@objc(cs)XSecurityUtil(cm)decryptWithCiphertext:nonceStr:tagStr:dynamicSalt:",
-            "mangledName": "$s9XSecurity0A4UtilC7decrypt10ciphertext8nonceStr03tagF011dynamicSaltSSSgSS_S3StFZ",
+            "usr": "s:9XSecurity0A4UtilV13decryptString10ciphertext8nonceStr03tagG011dynamicSaltSSSgSS_S3StFZ",
+            "mangledName": "$s9XSecurity0A4UtilV13decryptString10ciphertext8nonceStr03tagG011dynamicSaltSSSgSS_S3StFZ",
             "moduleName": "XSecurity",
             "static": true,
-            "objc_name": "decryptWithCiphertext:nonceStr:tagStr:dynamicSalt:",
             "declAttributes": [
-              "Final",
               "AccessControl",
-              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "XSecurityUtil",
-                "printedName": "XSecurity.XSecurityUtil",
-                "usr": "c:@M@XSecurity@objc(cs)XSecurityUtil"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@XSecurity@objc(cs)XSecurityUtil(im)init",
-            "mangledName": "$s9XSecurity0A4UtilCACycfc",
-            "moduleName": "XSecurity",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@XSecurity@objc(cs)XSecurityUtil",
-        "mangledName": "$s9XSecurity0A4UtilC",
+        "declKind": "Struct",
+        "usr": "s:9XSecurity0A4UtilV",
+        "mangledName": "$s9XSecurity0A4UtilV",
         "moduleName": "XSecurity",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -254,55 +271,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       }
