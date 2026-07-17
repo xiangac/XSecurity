@@ -10,8 +10,10 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public struct XSecurityUtil {
-  public static func encryptPlainText(_ plainText: Swift.String, dynamicSalt: Swift.String) -> [Swift.String : Swift.String]
-  public static func encrypt(plainText: Swift.String, dynamicSalt: Swift.String) -> (ciphertext: Swift.String, nonce: Swift.String, tag: Swift.String)
+  public static func encryptPlainString(_ plainText: Swift.String, dynamicSalt: Swift.String) -> [Swift.String : Swift.String]
+  public static func encryptString(plainText: Swift.String, dynamicSalt: Swift.String) -> (ciphertext: Swift.String, nonce: Swift.String, tag: Swift.String)
+  public static func encryptPlain(data: Foundation.Data, dynamicSalt: Swift.String) -> [Swift.String : Swift.String]
+  public static func encrypt(data: Foundation.Data, dynamicSalt: Swift.String) -> (ciphertext: Swift.String, nonce: Swift.String, tag: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   public static func decrypt(ciphertext: Swift.String, nonceStr: Swift.String, tagStr: Swift.String, dynamicSalt: Swift.String) -> Foundation.Data?
   #endif

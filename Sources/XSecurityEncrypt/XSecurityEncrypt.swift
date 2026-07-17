@@ -11,7 +11,7 @@ public class XSecurityTool: NSObject {
     ///   - dynamicSalt: 动态盐
     /// - Returns: 返回 Base64 编码的密文、Nonce、Tag 的组合，若失败返回 空字符串
     @objc public static func encryptPlainText(_ plainText: String, dynamicSalt: String) -> [String:String] {
-        return XSecurityUtil.encryptPlainText(plainText, dynamicSalt: dynamicSalt)
+        return XSecurityUtil.encryptPlainString(plainText, dynamicSalt: dynamicSalt)
     }
     
     /// 加密
@@ -20,7 +20,7 @@ public class XSecurityTool: NSObject {
     ///   - dynamicSalt: 动态盐
     /// - Returns: 返回 Base64 编码的密文、Nonce、Tag 的组合，若失败返回空字符
     public static func encrypt(plainText: String, dynamicSalt: String) -> (ciphertext: String, nonce: String, tag: String) {
-        return XSecurityUtil.encrypt(plainText: plainText, dynamicSalt: dynamicSalt)
+        return XSecurityUtil.encryptString(plainText: plainText, dynamicSalt: dynamicSalt)
     }
     
     /// 解密

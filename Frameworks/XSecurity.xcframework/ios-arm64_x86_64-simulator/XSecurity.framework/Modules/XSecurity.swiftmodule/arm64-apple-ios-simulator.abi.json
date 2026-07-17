@@ -38,8 +38,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "encryptPlainText",
-            "printedName": "encryptPlainText(_:dynamicSalt:)",
+            "name": "encryptPlainString",
+            "printedName": "encryptPlainString(_:dynamicSalt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -75,8 +75,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9XSecurity0A4UtilV16encryptPlainText_11dynamicSaltSDyS2SGSS_SStFZ",
-            "mangledName": "$s9XSecurity0A4UtilV16encryptPlainText_11dynamicSaltSDyS2SGSS_SStFZ",
+            "usr": "s:9XSecurity0A4UtilV18encryptPlainString_11dynamicSaltSDyS2SGSS_SStFZ",
+            "mangledName": "$s9XSecurity0A4UtilV18encryptPlainString_11dynamicSaltSDyS2SGSS_SStFZ",
             "moduleName": "XSecurity",
             "static": true,
             "declAttributes": [
@@ -87,8 +87,8 @@
           },
           {
             "kind": "Function",
-            "name": "encrypt",
-            "printedName": "encrypt(plainText:dynamicSalt:)",
+            "name": "encryptString",
+            "printedName": "encryptString(plainText:dynamicSalt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -129,8 +129,111 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9XSecurity0A4UtilV7encrypt9plainText11dynamicSaltSS10ciphertext_SS5nonceSS3tagtSS_SStFZ",
-            "mangledName": "$s9XSecurity0A4UtilV7encrypt9plainText11dynamicSaltSS10ciphertext_SS5nonceSS3tagtSS_SStFZ",
+            "usr": "s:9XSecurity0A4UtilV13encryptString9plainText11dynamicSaltSS10ciphertext_SS5nonceSS3tagtSS_SStFZ",
+            "mangledName": "$s9XSecurity0A4UtilV13encryptString9plainText11dynamicSaltSS10ciphertext_SS5nonceSS3tagtSS_SStFZ",
+            "moduleName": "XSecurity",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encryptPlain",
+            "printedName": "encryptPlain(data:dynamicSalt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9XSecurity0A4UtilV12encryptPlain4data11dynamicSaltSDyS2SG10Foundation4DataV_SStFZ",
+            "mangledName": "$s9XSecurity0A4UtilV12encryptPlain4data11dynamicSaltSDyS2SG10Foundation4DataV_SStFZ",
+            "moduleName": "XSecurity",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encrypt",
+            "printedName": "encrypt(data:dynamicSalt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(ciphertext: Swift.String, nonce: Swift.String, tag: Swift.String)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9XSecurity0A4UtilV7encrypt4data11dynamicSaltSS10ciphertext_SS5nonceSS3tagt10Foundation4DataV_SStFZ",
+            "mangledName": "$s9XSecurity0A4UtilV7encrypt4data11dynamicSaltSS10ciphertext_SS5nonceSS3tagt10Foundation4DataV_SStFZ",
             "moduleName": "XSecurity",
             "static": true,
             "declAttributes": [
